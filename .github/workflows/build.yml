@@ -21,7 +21,7 @@ jobs:
 
       - name: Generate Gradle Wrapper
         run: |
-          curl -s https://services.gradle.org/distributions/gradle-8.7-bin.zip -o gradle.zip
+          curl -fsSL https://services.gradle.org/distributions/gradle-8.7-bin.zip -o gradle.zip
           unzip -q gradle.zip
           ./gradle-8.7/bin/gradle wrapper --gradle-version 8.7
 
